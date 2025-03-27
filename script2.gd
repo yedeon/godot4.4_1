@@ -6,7 +6,7 @@ var app_url = "https://script.google.com/macros/s/AKfycbwIRJfDV*****************
 	
 func make_http_post_request() -> void:
 	var url = app_url
-  var request = HTTPRequest.new()
+        var request = HTTPRequest.new()
 	add_child(request)
 	print(url)#, json_data)
 	request.connect("request_completed", _on_request_completed)
